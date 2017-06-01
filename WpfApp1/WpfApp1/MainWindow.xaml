@@ -5,13 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="350" Width="525"
+        >
     <Grid x:Name="Inmobiliaria">
-        <Button Content="Empleado" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button Content="Empleado" HorizontalAlignment="Left" Margin="10,269,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
         <TextBlock x:Name="txtbEmpleado" HorizontalAlignment="Left" Margin="10,57,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="482"/>
-        <Button Content="Calcular PVP" HorizontalAlignment="Left" Margin="322,18,0,0" VerticalAlignment="Top" Width="75" Click="calcularPvp"/>
-        <TextBox x:Name="txtbPrecioBase" HorizontalAlignment="Left" Height="23" Margin="197,18,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" KeyDown="chekIntegerOnly"/>
+        <Button Content="Calcular PVP" HorizontalAlignment="Left" Margin="213,294,0,0" VerticalAlignment="Top" Width="75" Click="calcularPvp"/>
+        <TextBox x:Name="txtbPrecioBase" HorizontalAlignment="Left" Height="19" Margin="293,294,0,0" TextWrapping="Wrap" Text="PVP" VerticalAlignment="Top" Width="120" KeyDown="chekIntegerOnly"/>
         <Button Content="Calcular DNI" HorizontalAlignment="Left" Margin="10,294,0,0" VerticalAlignment="Top" Width="75" Click="calcularDni"/>
+        <Button Content="Obtener Clientes" HorizontalAlignment="Left" Margin="90,294,0,0" VerticalAlignment="Top" Width="118" Click="inicializar"/>
 
     </Grid>
 </Window>

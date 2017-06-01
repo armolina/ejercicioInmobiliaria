@@ -1,7 +1,9 @@
 ﻿Public Class Persona
 
+    Public id As Integer
     Public nombre As String
     Public apellidos As String
+    Public dni As String
     Public telefono As String
 
     'armm: declaro mi funcion Delegate 
@@ -14,7 +16,7 @@
         operacion.Invoke(_dni)
     End Sub
 
-    Public Function nombreApellidos()
+    Public Overridable Function nombreApellidos()
         nombreApellidos = nombre + " " + apellidos
     End Function
 

@@ -1,4 +1,9 @@
 ﻿Class MainWindow
+    Sub inicializar()
+        Dim cliente As New Cliente
+        cliente.obtenerClientes()
+    End Sub
+
     Private Sub Button_Click(sender As Object, e As RoutedEventArgs)
 
         Dim miOperaciones As New Operaciones
@@ -39,7 +44,8 @@
         Dim operacion As New Operaciones
         Dim ramon As New Empleado With {
             .nombre = "ramon",
-            .apellidos = "Molina"
+            .apellidos = "Molina",
+            .telefono = "876999000"
         }
 
         persona.calcularDni("65874547", AddressOf operacion.calcularLetraDni)
